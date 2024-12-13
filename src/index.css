@@ -27,3 +27,21 @@
 .gradient-text {
   @apply bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-600;
 }
+
+@keyframes twinkle {
+  0%, 100% {
+    opacity: 0.2;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@layer utilities {
+  .animate-twinkle {
+    animation: twinkle var(--duration, 4s) ease-in-out infinite;
+    will-change: transform, opacity;
+  }
+}

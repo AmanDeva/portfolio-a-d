@@ -1,6 +1,7 @@
 import { motion, AnimatePresence } from 'framer-motion';
 import { Suspense } from 'react';
 import { ErrorBoundary } from './components/ErrorBoundary';
+import { StarField } from './components/background';
 import Hero from './components/Hero';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
@@ -13,8 +14,9 @@ function App() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="min-h-screen bg-gray-900 text-white"
+          className="min-h-screen bg-transparent text-white relative"
         >
+          <StarField />
           <Suspense fallback={
             <div className="min-h-screen flex items-center justify-center">
               <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-purple-500" />
