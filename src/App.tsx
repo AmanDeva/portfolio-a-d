@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { StarField } from './components/background';
 import Hero from './components/Hero';
-import Projects from './components/Projects';
+import ProjectsSection from './components/projects/ProjectsSection';
 import Skills from './components/Skills';
 
 function App() {
@@ -23,7 +23,7 @@ function App() {
             </div>
           }>
             <Hero />
-            <Projects />
+            <ProjectsSection />
             <Skills />
             
             <footer className="py-8 text-center text-gray-400 border-t border-white/10">

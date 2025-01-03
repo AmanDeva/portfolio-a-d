@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { LineChart, MessageSquareWarning, Calendar, Cloud, ExternalLink } from 'lucide-react';
+import { LineChart, MessageSquareWarning, Calendar, Printer, ExternalLink } from 'lucide-react';
 
 const projects = [
   {
@@ -27,12 +27,12 @@ const projects = [
     tech: ['TypeScript', 'React', 'Firebase', 'Tailwind CSS'],
   },
   {
-    title: 'Weather App',
-    description: 'Real-time weather application using OpenWeather API. Features include current weather conditions, forecasts, and beautiful dynamic weather animations.',
-    icon: Cloud,
-    link: 'https://weather-app-74na.vercel.app/',
-    color: 'from-sky-600 to-indigo-500',
-    tech: ['React', 'OpenWeather API', 'Tailwind CSS', 'TypeScript'],
+    title: '2D Plotter',
+    description: 'Arduino-based 2D plotter capable of drawing computer-processed binary images on paper using precise motor control and G-code instructions.',
+    icon: Printer,
+    link: 'https://www.youtube.com/watch?v=dLojHmgkanA',
+    color: 'from-orange-600 to-red-500',
+    tech: ['Arduino', 'CNC Shield', 'G-code', 'Inkscape'],
   },
 ];
 

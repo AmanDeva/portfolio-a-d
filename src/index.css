@@ -44,4 +44,13 @@
     animation: twinkle var(--duration, 4s) ease-in-out infinite;
     will-change: transform, opacity;
   }
+
+  .perspective {
+    perspective: 1000px;
+  }
+
+  .transform-gpu {
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+  }
 }
