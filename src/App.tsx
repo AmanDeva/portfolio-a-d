@@ -5,6 +5,7 @@ import { StarField } from './components/background';
 import Hero from './components/Hero';
 import ProjectsSection from './components/projects/ProjectsSection';
 import Skills from './components/Skills';
+import ResumeSection from './components/ResumeSection';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
             </div>
           }>
             <Hero />
+            <ResumeSection />
             <ProjectsSection />
             <Skills />
             
