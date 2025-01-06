@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import ProjectsSection from './components/projects/ProjectsSection';
 import Skills from './components/Skills';
 import ResumeSection from './components/ResumeSection';
+import ChatBot from './components/ChatBot/ChatBot';
 
 function App() {
   return (
@@ -33,6 +34,8 @@ function App() {
                 <p>© {new Date().getFullYear()} Aman Deva. All rights reserved.</p>
               </div>
             </footer>
+
+            <ChatBot />
           </Suspense>
         </motion.div>
       </AnimatePresence>
